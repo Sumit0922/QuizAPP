@@ -24,19 +24,19 @@ class SplashScreen extends StatelessWidget {
 
             // Display the second Lottie animation
             GestureDetector(
-              onTap: (){ Navigator.of(context).pushReplacement(
-                MaterialPageRoute(
-                  builder: (_) => HomeScreen(),
-                ),
-              );},
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (_) => HomeScreen(),
+                  ),
+                );
+              },
               child: Lottie.asset(
                 'assets/images/start.json',
                 width: 200,
                 height: 200,
               ),
             ),
-
-
           ],
         ),
       ),
